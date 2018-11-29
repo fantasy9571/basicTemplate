@@ -1,0 +1,177 @@
+#layout {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  .sideItem {
+    position: fixed;
+    left: 0;
+    top: 0; // overflow: auto;
+    height: 100%;
+    transition: width .28s;
+    z-index: 100;
+    background-color: #304156;
+    #submenu-title-noDropdown {
+      background-color: #304156;
+      &:hover {
+        background-color: #001528
+      }
+    }
+    .el-menu {
+      //左侧栏样式
+      border-right: 0;
+      background-color: #304156;
+      .el-submenu__title {
+        color: rgb(191, 203, 217);
+        &:hover {
+          background: #001528
+        }
+        i {
+          color: rgb(191, 203, 217);
+        }
+      }
+      .el-menu-item.is-active {
+        color: #409EFF
+      }
+      .el-menu-item {
+        color: rgb(191, 203, 217);
+        background: #1f2d3d;
+        &:hover {
+          background: #001528
+        }
+      }
+    }
+  }
+  #container {
+    position: relative;
+    min-height: 100%;
+    transition: .28s;
+    header {
+      height: 50px;
+      line-height: 50px;
+      .toggle {
+        margin-left: 10px;
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+        transition: .38s;
+        transform: rotate(0)
+      }
+      .isActive {
+        transform: rotate(90deg)
+      }
+      .app-breadcrumb.el-breadcrumb {
+        display: inline-block;
+        line-height: 10px;
+        margin-left: 20px;
+        a {
+          font-weight: 400 !important;
+        }
+        .no-redirect {
+          color: #97a8be;
+          cursor: text;
+        }
+      }
+    }
+  }
+}
+
+//左侧栏悬浮的样式
+.el-menu--vertical {
+  .el-menu {
+    background-color: #304156;
+    .el-menu-item.is-active {
+      color: #409EFF
+    }
+    .el-menu-item {
+      color: rgb(191, 203, 217);
+      background: #1f2d3d;
+      &:hover {
+        background: #001528
+      }
+    }
+  }
+}
+
+#dashboard-container {
+  .dashboard-editor-container {
+    padding: 32px;
+    background-color: rgb(240, 242, 245);
+    .select-time {
+      text-align: right;
+    }
+    .chart-wrapper {
+      background: #fff;
+      padding: 16px 16px 0;
+      margin-bottom: 32px;
+    }
+    .panel-group {
+      margin-top: 18px;
+      .card-panel-col{
+        margin-bottom: 32px;
+      }
+      .card-panel {
+        padding-left: 40px;
+        padding-top: 20px;
+        height: 108px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        color: #666;
+        background: #fff;
+        box-shadow: 4px 4px 40px rgba(0, 0, 0, .05);
+        border-color: rgba(0, 0, 0, .05);
+        .card-panel-num {
+          color: #000;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        .ratio {
+          margin-top: 5px;
+        }
+        .down {
+          display: flex;
+          font-size: 14px;
+          color: rgb(251, 60, 7);
+          padding-right: 5px;
+          &::before {
+            content: '';
+            display: block;
+            width:0;
+            height:0;
+            border-width:5px 5px 0;
+            border-style:solid;
+            border-color:rgb(251, 60, 7) transparent transparent;
+            position: relative;
+            top: 6px;
+            margin-right: 5px;
+          }
+        }
+        .up {
+          display: flex;
+          font-size: 14px;
+          color: rgb(42, 176, 10);
+          padding-right: 5px;
+          &::before {
+            content: '';
+            display: block;
+            width:0;
+            height:0;
+            border-width:0 5px 5px;
+            border-style:solid;
+            border-color:transparent transparent rgb(42, 176, 10) ;
+            position: relative;
+            top: 5px;
+            margin-right: 5px;
+          }
+        }
+        .gray {
+          font-size: 13px;
+        }
+      }
+    }
+    .chart-title {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}

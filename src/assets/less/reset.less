@@ -1,0 +1,90 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+  margin: 0;
+  padding: 0;
+}
+*{box-sizing: border-box;}
+
+
+
+.clear-fix {
+  *zoom:1;
+  &:after {
+    content: '';
+    clear: both;
+    display:block; 
+    overflow:hidden;
+    height:0; 
+    visibility:hidden; 
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-weight:normal;
+}
+ul,ol {
+  list-style: none;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  outline: 0
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.fl {
+  float: left
+}
+
+.fr {
+  float: right
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tc {
+  text-align: center
+}
+
+.ver-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+.ellipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.inline{
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
