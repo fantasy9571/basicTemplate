@@ -1,6 +1,6 @@
 # basic-template
 
-> 天鹂公司后台管理系统基础模版
+> 企业后台管理系统基础模版
 
 ## Build Setup
 
